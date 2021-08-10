@@ -1,10 +1,41 @@
-# flight-app
+# Flight Search App
+A web application built using Vue.js and * [Atomic Design](https://atomicdesign.bradfrost.com/) princicple to find return trip best price for your flight 
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+### Demo
+Here is a working live demo :  https://my-projet-f21ee.web.app
+
+<p align="center">
+  <img alt="screenshot" src="https://firebasestorage.googleapis.com/v0/b/my-projet-f21ee.appspot.com/o/screenshot.png?alt=media&token=0bbfb11f-406d-4f30-b4cc-36283b611c34">
+</p>
+### Browser Support
+
+
+### Built With
+
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [Vue.js v2.6](https://vuejs.org/)
+* [Vuetify](https://vuetifyjs.com/)
+* [Vuex](https://vuex.vuejs.org/)
+* [Typescript](https://laravel.com)
+* [Moocha](https://mochajs.org/)  & [Chai](https://www.chaijs.com/) for using testing
+* [Cypres](https://www.cypress.io/) for  End to End  testing
+
+### API
+For simplicity, fake API is used that getting static data stored in ```public``` directory
+
 
 ## Project setup
 ```
 yarn install
 ```
 
+### Customize project setting such as port and api endpoint (Optional)
+```
+cp env.sample env
+```
 ### Compiles and hot-reloads for development
 ```
 yarn serve
@@ -32,3 +63,8 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Project Information
+
+
