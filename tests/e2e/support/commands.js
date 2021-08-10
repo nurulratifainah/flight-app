@@ -23,3 +23,15 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+
+/**
+ * Fetches elements by their data-testid attribute
+ * @memberOf Cypress.Chainable#
+ * @name getByTestId
+ * @param {string} query
+ * @function
+ * @returns Cypress.Chainable
+ */
+Cypress.Commands.add('getByTestId', (query) => cy.get(`[data-testid="${query}"]`))
+
