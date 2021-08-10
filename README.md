@@ -10,8 +10,9 @@ Here is a working live demo :  https://my-projet-f21ee.web.app
 <p align="center">
   <img alt="screenshot" src="https://firebasestorage.googleapis.com/v0/b/my-projet-f21ee.appspot.com/o/screenshot.png?alt=media&token=0bbfb11f-406d-4f30-b4cc-36283b611c34">
 </p>
-### Browser Support
 
+#### Browser Compatibility
+Supports all browsers that are [ES5-compliant](https://kangax.github.io/compat-table/es5/) (IE8 and below are not supported).
 
 ### Built With
 
@@ -64,7 +65,5 @@ yarn lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-
-### Project Information
 
 
