@@ -21,7 +21,7 @@
         <v-row data-testid="date-row">
           <v-col cols="12" sm="6">
             <base-date-picker
-                v-model="returnDate" :label="'Departure date'"></base-date-picker>
+                v-model="departureDate" :label="'Departure date'"></base-date-picker>
           </v-col>
           <v-col>
             <base-date-picker v-model="returnDate" :label="'Return date'"></base-date-picker>

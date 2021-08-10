@@ -1,5 +1,6 @@
 describe("Search form should be working", () => {
   it("fills in the form", () => {
+    const time = 5000
     cy.server();
 
     cy.visit("/");
@@ -13,19 +14,22 @@ describe("Search form should be working", () => {
       .invoke("text")
       .should("contain", "Please  fill up  all fields");
 
-    // submit wit some data
+    cy.wait(time)
+
+    // submit with some data
     // City of Origin
     cy.getByTestId("origin").click();
 
+
     cy.get(".v-list").then(($elements) => {
-      cy.wrap($elements[0]).children().eq(1).click();
+      cy.wrap($elements[0]).children().eq(3).click();
     });
 
     // Destination
     cy.getByTestId("destination").click();
 
     cy.get(".v-list").then(($elements) => {
-      cy.wrap($elements[1]).children().eq(6).click();
+      cy.wrap($elements[1]).children().eq(5).click();
     });
 
     //try to submit the form
@@ -36,6 +40,9 @@ describe("Search form should be working", () => {
       .children()
       .invoke("text")
       .should("contain", "Please  fill up  all fields");
+
+    cy.wait(time)
+
 
     //submit with complete form
     //fill departure date
