@@ -22,9 +22,6 @@
     </template>
 
     <template slot="action">
-<!--      <div class="purple darken-2 text-center">
-        <span class="white&#45;&#45;text">Lorem ipsum</span>
-      </div>-->
       <v-btn text class="hidden-md-and-up">{{offer.seatAvailability}} seat available</v-btn>
     </template>
   </base-card>

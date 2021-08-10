@@ -9,7 +9,7 @@ enum Api {
 
 
 export  function searchFlights(params: SearchFlightParams){
-  return http.request<FlightOffer[]>({
+  return http.request({
     url: Api.offers,
     method: "GET",
     params,

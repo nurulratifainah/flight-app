@@ -13,14 +13,16 @@ export const actions = {
       const offers: FlightOffer[] = await searchFlights(search);
 
       store.commit("offers/setIsSearch", true);
+
+      // since the API is static, filter result based on origin and destination
       const bestOffer = offers.find(
         (offer: FlightOffer) =>
           offer.origin == search.origin &&
           offer.destination == search.destination
       );
 
-      if (typeof bestOffer !== "undefined")
-        store.commit("offers/setFlightOffers", bestOffer);
+      const result = typeof bestOffer === "undefined" ? {} as FlightOffer :  bestOffer
+      store.commit("offers/setFlightOffers", result)
 
       return Promise.resolve(true);
     } catch (e) {
