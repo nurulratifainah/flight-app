@@ -1,13 +1,21 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <v-app>
+    <div id="app">
+      <v-app-bar app>
+        <div id="nav">
+          <router-link to="/">Home</router-link> |
+          <router-link to="/about">About</router-link>
+        </div>
+      </v-app-bar>
+
+      <v-main>
+        <router-view />
+      </v-main>
     </div>
-    <router-view />
-  </div>
+  </v-app>
 </template>
 
+<!--
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -30,3 +38,4 @@
   }
 }
 </style>
+-->

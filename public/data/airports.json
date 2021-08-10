@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Koln Bonn",
+    "city": "Cologne",
+    "country": "Germany",
+    "iata_code": "CGN",
+    "_geoloc": {
+      "lat": 50.865917,
+      "lng": 7.142744
+    },
+    "links_count": 265,
+    "objectID": "344"
+  },
+  {
+    "name": "Frankfurt Main",
+    "city": "Frankfurt",
+    "country": "Germany",
+    "iata_code": "FRA",
+    "_geoloc": {
+      "lat": 50.026421,
+      "lng": 8.543125
+    }
+  },
+  {
+    "name": "Franz Josef Strauss",
+    "city": "Munich",
+    "country": "Germany",
+    "iata_code": "MUC",
+    "_geoloc": {
+      "lat": 48.353783,
+      "lng": 11.786086
+    }
+  },
+  {
+    "name": "Dusseldorf",
+    "city": "Duesseldorf",
+    "country": "Germany",
+    "iata_code": "DUS",
+    "_geoloc": {
+      "lat": 51.289453,
+      "lng": 6.766775
+    }
+  },
+  {
+    "name": "Tegel",
+    "city": "Berlin",
+    "country": "Germany",
+    "iata_code": "TXL",
+    "_geoloc": {
+      "lat": 52.559686,
+      "lng": 13.287711
+    },
+    "links_count": 418,
+    "objectID": "351"
+  },
+  {
+    "name": "Hamburg",
+    "city": "Hamburg",
+    "country": "Germany",
+    "iata_code": "HAM",
+    "_geoloc": {
+      "lat": 53.630389,
+      "lng": 9.988228
+    }
+  },
+  {
+    "name": "Fiumicino",
+    "city": "Rome",
+    "country": "Italy",
+    "iata_code": "FCO",
+    "_geoloc": {
+      "lat": 41.804475,
+      "lng": 12.250797
+    },
+    "links_count": 662,
+    "objectID": "1555"
+  }
+]

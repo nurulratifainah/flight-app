@@ -1,0 +1,66 @@
+[
+  {
+    "origin": "FRA",
+    "destination": "FCO",
+    "departureDate": "2021-08-20",
+    "returnDate": "2021-08-21",
+    "seatAvailability": 7,
+    "price" : {
+      "amount" : 128.26,
+      "currency" : "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af"
+  },
+  {
+    "origin": "FRA",
+    "destination": "FCO",
+    "departureDate": "2021-08-21",
+    "returnDate": "2021-08-22",
+    "seatAvailability": 7,
+    "price" : {
+      "amount" : 128.26,
+      "currency" : "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af"
+  },
+  {
+    "origin": "FRA",
+    "destination": "FCO",
+    "departureDate": "2021-08-22",
+    "returnDate": "2021-08-23",
+    "seatAvailability": 7,
+    "price" : {
+      "amount" : 128.26,
+      "currency" : "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af"
+  },
+  {
+    "origin": "FRA",
+    "destination": "FCO",
+    "departureDate": "2021-08-23",
+    "returnDate": "2021-08-24",
+    "seatAvailability": 7,
+    "price" : {
+      "amount" : 128.26,
+      "currency" : "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af"
+  },{
+  "origin": "FRA",
+  "destination": "FCO",
+  "departureDate": "2021-08-24",
+  "returnDate": "2021-08-25",
+  "seatAvailability": 7,
+  "price" : {
+    "amount" : 128.26,
+    "currency" : "EUR"
+  },
+  "offerType": "BestPrice",
+  "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af"
+}
+]
