@@ -15,7 +15,6 @@
   </v-app>
 </template>
 
-<!--
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -33,9 +32,8 @@
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #d81b60 ;
     }
   }
 }
 </style>
--->

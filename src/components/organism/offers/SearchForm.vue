@@ -6,6 +6,7 @@
           <v-col cols="12" sm="6">
             <city-select data-testid="origin"
               :label="'Departure Airport'"
+               :excluded="excludedOriginCity"
               v-model="origin"
             ></city-select>
           </v-col>
@@ -13,20 +14,24 @@
             <city-select data-testid="destination"
               :label="'Destination Airport'"
               v-model="destination"
+               :excluded="excludedDestinationCity"
             ></city-select>
           </v-col>
         </v-row>
         <v-row data-testid="date-row">
           <v-col cols="12" sm="6">
-            <base-date-picker v-model="departureDate" data-testid="departureDate" id="departureDate"></base-date-picker>
+            <base-date-picker
+                v-model="returnDate" :label="'Departure date'"></base-date-picker>
           </v-col>
           <v-col>
-            <base-date-picker v-model="returnDate"></base-date-picker>
+            <base-date-picker v-model="returnDate" :label="'Return date'"></base-date-picker>
           </v-col>
         </v-row>
-        <base-button :color="'primary'" @click="onClickSearch" :block="false" data-testid="submit"
-          >Search Flight</base-button
-        >
+        <v-row align="left" no-gutters>
+          <base-button :color="'primary'" @click="onClickSearch" :block="false" data-testid="submit"
+            >Search Flight</base-button
+          >
+        </v-row>
         <search-snackbar :snackbar="isDirty" @onClose="onClose" data-testid="snackbar"/>
       </form>
     </template>
@@ -52,7 +57,7 @@ import SearchSnackbar from "@/components/molecules/offers/Snackbar.vue";
     SearchSnackbar
   },
 })
-export default class Home extends Vue {
+export default class SearchForm extends Vue {
   isDirty = false;
 
   get origin() {
@@ -63,12 +68,20 @@ export default class Home extends Vue {
     this.$store.commit("offers/setOrigin", value);
   }
 
+  get excludedOriginCity(){
+    return  [this.destination]
+  }
+
   get destination() {
     return this.$store.state.offers.search.destination;
   }
 
   set destination(value) {
     this.$store.commit("offers/setDestination", value);
+  }
+
+  get excludedDestinationCity(){
+    return  [this.origin]
   }
 
   get departureDate() {
