@@ -17,7 +17,7 @@ Supports all browsers that are [ES5-compliant](https://kangax.github.io/compat-t
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Vue.js v2.6](https://vuejs.org/)
+* [Vue.js v2.6](https://vuejs.org/) due to more library support, this project not using latest version of Vue.js
 * [Vuetify](https://vuetifyjs.com/)
 * [Vuex](https://vuex.vuejs.org/)
 * [Typescript](https://laravel.com)
@@ -26,7 +26,7 @@ This section should list any major frameworks that you built your project using.
 
 ### API
 For simplicity, fake API is used that getting static data stored in ```public``` directory
-
+Offers data only available for city origin Frankfurt and departure city Fiumicino  with departure date within 2 months from 11th AUgust 2021. 
 
 ## Project setup
 ```
